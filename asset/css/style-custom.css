@@ -1,0 +1,370 @@
+/* ======== Font Style ======== */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Fauna+One);
+/* ============================ */
+
+:root {
+  --post-title-color: hsl(0, 0%, 0%);
+  --post-title-font-style: "Lora", serif;
+  --blog-meta-item-color: #666;
+  --blog-meta-item-link-color: #222;
+  --blog-meta-font-size: 12px;
+  --blog-post-desc-font-style: "Lora", serif;
+  --font-lora: "Lora", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site-content {
+  position: relative;
+  height: 100%;
+}
+
+.change-my-color {
+  background: yellow;
+}
+
+#iconSide {
+  fill: yellow;
+}
+
+.navik-menu-overlay {
+  overflow: hidden;
+}
+
+.sidebar_title {
+  font-size: 15px;
+  font-family: "Lora", serif; 
+  color: #717171;
+}
+
+.sidebar_text {
+  color: #666666;
+  font-size: 14px;
+  font-family: "Lora", serif; 
+}
+
+.post_title {
+  font-family: var(--post-title-font-style);
+  color: var(--post-title-color);
+  font-weight: 600;
+}
+
+.post_title:hover {
+  color: var(--post-title-color);
+}
+
+.blog_post_image img {
+  border-radius: 10px;
+}
+
+.blog_post_meta .blog_meta_item {
+  color: var(--blog-meta-item-color);
+  font-size: var(--blog-meta-font-size);
+  margin-right: 18px;
+}
+
+.blog_post_meta .blog_meta_item a {
+  color: var(--blog-meta-item-link-color);
+  border-bottom: 1px dotted #ccc;
+  text-decoration: none;
+}
+
+.blog_post_meta .blog_meta_item a:hover {
+  color: #f47c00;
+  transition: color 0.2s ease-in;
+}
+
+.blog_meta_author img {
+  width: 25px;
+  margin-right: 3px;
+  border-radius: 50%;
+}
+
+.blog_post_desc {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "Lora", serif;
+}
+
+.blog_post_control_item {
+  float: left;
+  margin-right: 14px;
+}
+
+.blog_post_readmore a {
+  height: 38px;
+  padding: 0 22px;
+  display: inline-block;
+  line-height: 38px;
+  border: 1px solid #f47c00;
+  color: #222;
+  border-radius: 30px;
+  transition: color 0.5s;
+}
+
+.blog_post_readmore a:hover {
+  background: #f47c00;
+  color: #fff;
+}
+
+.blog_post_share {
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #ddd;
+  padding: 0 22px;
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+hr {
+  background-color: #ddd;
+}
+
+.pagination .active {
+  color: #ffffff !important;
+  background-color: #f47c00 !important;
+}
+
+.pagination a.page-link {
+  color: #333333;
+}
+
+.pagination a.page-link:hover {
+  border-color: #f47c00;
+  background: transparent;
+}
+
+.footer_title {
+  font-weight: bold;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+.footer_text {
+  margin-top: 12px;
+  font-family: "Lora", serif;
+  font-size: 14px;
+}
+
+.footer_tweets ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer_tweet_item {
+  font-size: 13px;
+  font-family: "Lora", serif;
+}
+
+.footer_tweet_item i {
+  color: #1da1f2;
+}
+
+.footer_tweet_item .tweet_name {
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer_tweet_item .tweet_time {
+  color: #8899a6;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.footer_tweet_item .tweet_control i {
+  color: #8899a6;
+  font-size: 11px;
+}
+
+.footer_tweet_item .tweet_control i:hover {
+  color: #1da1f2;
+  transition: color 0.2s ease-in;
+}
+
+.footer_comments ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+.footer_comments .recentcomment,
+.footer_comments .recentcomment a {
+  font-size: 14px;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.footer_comments .recentcomment a:hover {
+  color: #f47c00;
+}
+
+.menu-social-media {
+  position: static !important;
+}
+
+#cookieCard {
+  position: fixed;
+  bottom: 0;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 280px;
+  height: 300px;
+  background-color: #fff;
+  color: #000
+
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 14px;
+}
+
+.icon-bar_item {
+  background: #000;
+}
+
+.icon-bar_item:hover {
+  color: #fff;
+  background: #f47c00;
+}
+
+.sidebar-post_title {
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+
+.side-post_line-container {
+  width: 100%;
+  height: 3px;
+  background: rgba(155, 155, 155, 0.1);
+}
+
+.side-post_line {
+  width: 13%;
+  height: 100%;
+  background: #f47c00;
+}
+
+
+/* -------- IMAGE HOVER -------- */
+.snip1482 {
+  font-family: 'Fauna One', Arial, sans-serif;
+  position: relative;
+  max-width: 100%;
+  min-height: 220px;
+  width: 100%;
+  color: #ffffff;
+  text-align: right;
+  line-height: 1.4em;
+  background-color: #1a1a1a;
+  font-size: 16px;
+}
+.snip1482 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1482 img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.snip1482 figcaption {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+}
+.snip1482 h2,
+.snip1482 p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+.snip1482 h2 {
+  font-family: 'Playfair Display', Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.snip1482 p {
+  font-size: 0.8em;
+}
+.snip1482 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1482:hover img,
+.snip1482.hover img {
+  width: 55%;
+  right: -10%;
+}
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+/* ----- END IMAGE HOVER ------ */
+
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+
+@media (max-width: 575.98px) {
+  .custom-padding {
+    padding: 0px 12px !important;
+  }
+
+  .pagination {
+    padding-left: revert !important;
+  }
+
+  .footer-custom-padding {
+    padding: 0px 12px !important;
+  }
+
+  .iframe_video {
+    height: 200px;
+  }
+}
